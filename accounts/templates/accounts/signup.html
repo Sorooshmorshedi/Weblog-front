@@ -1,0 +1,54 @@
+{% load static %}
+<DOCTYPE html>
+    <html lang="eng" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            {% block title %}
+                Sign UP
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static "accounts/base.css" %}">
+    </head>
+    <body>
+    <form class="sign" action={% url 'accounts:signup' %} method="post">
+        {% csrf_token %}
+        <h1>Sign Up Weblog</h1>
+        {{ form }}
+        <input type="submit" value="signup">
+
+    </form>
+    </html>
+    <style scope>
+        span.helptext{
+            color: #b9def0;
+        }
+        form.sign {
+            margin-top: 200px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #dd1144;
+            width : 250px ;
+            height : auto;
+            padding: 50px;
+            position  :center ;
+            margin: auto;
+        }
+        h1{
+            margin-bottom: 20px;
+            color: snow;
+        }
+
+        input{
+            color: #1b1b1b;
+            background-color: #c7ddef;
+            padding: 10px;
+            margin: 5px;
+
+        }
+        label{
+            color: #570808;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
