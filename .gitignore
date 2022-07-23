@@ -1,2 +1,28 @@
 # created by virtualenv automatically
 db.sqlite3
+.DS_Store
+node_modules/
+# /dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+media/
+*.log
+backups/
+pyvenv.cfg
+# Editor directories and files
+.idea/
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+**/__pycache__
+.git.bfg-report
+bfg.jar
+Lib
+Scripts
+node_modules
+tmp_test.py
+venv
+.coverage
